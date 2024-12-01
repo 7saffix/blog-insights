@@ -17,6 +17,17 @@ export const createBlog = async(req,res)=>{
     }
 }
 
+//read blog
+export const getBlog = async(req,res)=>{
+    try {
+       const blogs = await Blog.find({})
+       res.status(200).json({success:true,data:blogs})
+    } catch (error) {
+        console.log('Error in create blog section',error)
+        res.status(500).json({success:false,message:'Server Error'})
+    }
+}
+
 //update blog
 export const updateBlog = async(req,res)=>{
     const {id} = req.params
