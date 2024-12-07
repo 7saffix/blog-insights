@@ -1,5 +1,6 @@
 import express from 'express'
 import dotenv from 'dotenv'
+import cors from 'cors'
 import connectDB from './DB/db.js'
 import blogRouter from './Routes/blogRoute.js'
 import serviceRouter from './Routes/serviceRoute.js'
@@ -10,6 +11,10 @@ const app = express()
 const PORT = process.env.PORT || 5000
 
 app.use(express.json())
+app.use(cors({
+    origin: ' http://localhost:5173', 
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+}))
 app.use('/api',blogRouter)
 app.use('/api',serviceRouter)
 app.use('/api',teamRouter)
