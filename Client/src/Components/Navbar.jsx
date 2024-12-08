@@ -49,7 +49,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <Link to={'/admin'} className="btn me-1">Dashboard</Link>
-          <Link to={'/login'} className="btn">Login</Link>
+          {/* <Link to={'/login'} className="btn">Login</Link> */}
         </div>
       </div>
     );
