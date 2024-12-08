@@ -1,10 +1,10 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
-import connectDB from './DB/db.js'
-import blogRouter from './Routes/blogRoute.js'
-import serviceRouter from './Routes/serviceRoute.js'
-import teamRouter from './Routes/teamRoute.js'
+import connectDB from './Server/DB/db.js'
+import blogRouter from './Server/Routes/blogRoute.js'
+import serviceRouter from './Server/Routes/serviceRoute.js'
+import teamRouter from './Server/Routes/teamRoute.js'
 
 dotenv.config()
 const app = express()
