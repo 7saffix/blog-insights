@@ -2,7 +2,7 @@
 
 const Custom = () => {
     return (
-        <div className="hero bg-[url('./assets/banner-trends.jpg')] rounded-2xl">
+        <div className="hero bg-[url('./assets/banner-trends.jpg')] rounded-2xl my-10">
          <div className="hero-overlay bg-opacity-90 lg:rounded-2xl"></div>
   <div className="hero-content text-neutral-content text-center">
     <div className="max-w-md py-3">
@@ -10,7 +10,7 @@ const Custom = () => {
       <p className="mb-3">
       Every business is unique. Request a tailored solution crafted specifically for your  organizations challenges and goals.
       </p>
-      <button className="btn">CONTACT US</button>
+      {/* <button className="btn">CONTACT US</button> */}
     </div>
   </div>
         </div>
