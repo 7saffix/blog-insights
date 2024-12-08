@@ -1,11 +1,11 @@
 // import React from 'react';
 
-import Register from "../Components/Registration";
+// import Register from "../Components/Registration";
 
 const RegistrationPage = () => {
     return (
         <div>
-            <Register/>
+            {/* <Register/> */}
         </div>
     );
 };
